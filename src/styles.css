@@ -1,0 +1,26 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; }
+a { text-decoration: none; }
+
+/* Theme variables injected on <html> by ThemeContext */
+:root {
+  --bg: #ffffff; --bg2: #F8FAFC; --text: #0F172A; --text2: #475569; --text3: #94A3B8;
+  --blue: #1A56DB; --blue-dark: #1045B8; --blue-light: #EBF2FF;
+  --green: #16A34A; --green-dark: #166534; --green-light: #DCFCE7;
+  --nav-bg: rgba(255,255,255,0.93); --card-bg: #ffffff;
+  --footer-bg: #0F172A; --footer-text: #64748B;
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.07);
+  --shadow-md: 0 6px 28px rgba(0,0,0,0.11);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.16);
+}
+[data-theme="dark"] {
+  --bg: #0F172A; --bg2: #1E293B; --text: #F1F5F9; --text2: #94A3B8; --text3: #64748B;
+  --blue: #3B82F6; --blue-dark: #2563EB; --blue-light: #1E3A6E;
+  --green: #22C55E; --green-dark: #16A34A; --green-light: #14532D;
+  --nav-bg: rgba(15,23,42,0.95); --card-bg: #1E293B;
+  --footer-bg: #020617; --footer-text: #475569;
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.3);
+  --shadow-md: 0 6px 28px rgba(0,0,0,0.4);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.5);
+}
